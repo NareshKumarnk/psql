@@ -38,7 +38,7 @@ def register_guest():
     name = request.form.get('name')
     email = request.form.get('email')
 
-    guest = Guest(name, email)
+    guest = Guest(id, name, email)
     db.session.add(guest)
     db.session.commit()
 
