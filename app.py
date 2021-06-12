@@ -4,13 +4,7 @@ from flask import Flask, render_template, request
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-
-database_uri = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
-    dbuser=os.environ['DBUSER'],
-    dbpass=os.environ['DBPASS'],
-    dbhost=os.environ['DBHOST'],
-    dbname=os.environ['DBNAME']
-)
+database_uri = 'postgresql+psycopg2://naresh:password@postgresql-im0i/postgres'
 
 app = Flask(__name__)
 app.config.update(
