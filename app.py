@@ -34,6 +34,7 @@ def view_registration_form():
 @app.route('/register', methods=['POST'])
 def register_guest():
     from models import Guest
+    id = request.form.get('id')
     name = request.form.get('name')
     email = request.form.get('email')
 
