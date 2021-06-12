@@ -9,6 +9,7 @@ class Guest(db.Model):
     name = db.Column(db.String(80))
     email = db.Column(db.String(120))
 
-    def __init__(self, name=None, email=None):
+    def __init__(self,id, name=None, email=None):
+        self.id = id
         self.name = name
         self.email = email
