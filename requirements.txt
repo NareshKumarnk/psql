@@ -1,6 +1,5 @@
-sys
 setuptools
-tokenize
+#tokenize
 alembic==0.9.1
 appdirs==1.4.3
 click==6.7
